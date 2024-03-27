@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-stone-800 text-white placeholder-gray-300 transition-all focus:border-yellow-400/40 focus:text-white hover:border-yellow-300/40
+}
+
+body{
+    
+    /* background-image: linear-gradient(to right bottom, #9699f0, #7caaf5, #6cb8f3, #6dc3eb, #7dcce2, #75c2da, #6db8d1, #66aec9, #4f8ebc, #4f6ca7, #5a4787, #601c5d); */
+    
+     background: linear-gradient(295deg,#774376,#3d3cc0,#61cadb,#11020d);
+     background-size: 240% 240%;
+     animation: gradient-animation 16s ease infinite;
+     
+
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
